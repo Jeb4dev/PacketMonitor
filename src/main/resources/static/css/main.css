@@ -1,0 +1,122 @@
+.text {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.label {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.label.data{
+    -fx-padding: 10px 20px;
+}
+.text-area {
+    -fx-text-fill: #a42b2b;
+    -fx-background-color: transparent;
+    -fx-padding: 0 20px;
+    -fx-wrap-text: true;
+}
+.text-area .content {
+    -fx-background-color: #222 ;
+    -fx-text-alignment: center;
+}
+.combo-box {
+    -fx-background-color: #222 ;
+    -fx-text-fill: white;
+}
+.combo-box .list-cell  {
+    -fx-background-color: #222 ;
+    -fx-text-fill: white;
+}
+.combo-box .list-cell:hover  {
+    -fx-background-color: #1a1a1a ;
+}
+
+.button {
+    -fx-background-color: #222;
+
+    -fx-min-width: 30px;
+
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+}
+.button:hover {
+    -fx-effect: dropshadow( gaussian , rgba(98, 3, 3, 0.8), 10, 0, 1, 1);
+}
+
+.button:pressed {
+    -fx-background-color: #1a1a1a;
+    -fx-effect: dropshadow( gaussian , rgba(98, 3, 3, 0.8), 10, 0, 1, 1);
+}
+
+.table-view {
+    -fx-background-color: #222;
+}
+.table-view .label {
+    -fx-text-fill: white;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: #000;
+}
+.table-view .column-header {
+    -fx-background-color: #000;
+    -fx-border-color: #222;
+}
+.table-view .table-cell{
+    -fx-border-color: #222;
+    -fx-padding: 2 0 2 10px;
+    -fx-text-background-color: #FFF;
+
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #151515;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #1a1a1a;
+}
+
+.HeaderLabel {
+    -fx-padding: 20px;
+    -fx-font-size: xx-large;
+}
+
+.HeaderLabel .text {
+    -fx-fill: rgb(255, 255, 255);
+}
+
+/*  Remove horizontal scroll bar    */
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button,
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+/*      SCROLL BAR STYLING      */
+/*  The draggable thing    */
+.table-view *.scroll-bar:vertical *.thumb {
+    -fx-background-color: #222;
+}
+/*  background of scrollbar    */
+.table-view *.scroll-bar:vertical *.track {
+    -fx-background-color: #111;
+}
+/*  the arrow itself    */
+.table-view *.scroll-bar:vertical *.decrement-arrow,
+.table-view *.scroll-bar:vertical *.increment-arrow {
+    -fx-background-color: #fff;
+}
+/*  the arrow button    */
+.table-view *.scroll-bar:vertical {
+    -fx-background-color: #222;
+}
